@@ -1,0 +1,14 @@
+{
+  "@plentymarkets/generator-plugin": {
+    "promptValues": {
+      "type": "backend"
+    },
+    "answers": {
+      "name": "CustomPlugin",
+      "author": "Ovidiu Ivan",
+      "type": "backend",
+      "description": "Test trait",
+      "version": "0.0.1"
+    }
+  }
+}
