@@ -4,7 +4,7 @@ namespace CustomPlugin\Controllers;
 
 use Plenty\Plugin\Controller;
 use Plenty\Modules\Authorization\Services\AuthHelper;
-use Plenty\Modules\Account\Contact\Contracts;
+use Plenty\Modules\Account\Contact\Contracts\ContactRepositoryContract;
 
 
 class CustomPluginController extends Controller
