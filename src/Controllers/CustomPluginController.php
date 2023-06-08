@@ -3,8 +3,8 @@
 namespace CustomPlugin\Controllers;
 
 use Plenty\Plugin\Controller;
-use Plenty\Modules\Account\Address\Contracts\AddressRepositoryContract;
 use Plenty\Modules\Authorization\Services\AuthHelper;
+use Plenty\Modules\Account\Contact\Contracts;
 
 
 class CustomPluginController extends Controller
@@ -14,20 +14,20 @@ class CustomPluginController extends Controller
      */
     public function getHelloWorldPage()
     {
-        /** @var \Plenty\Modules\Account\Address\Contracts\AddressRepositoryContract $addressRepo */
-        $addressRepo = pluginApp(AddressRepositoryContract::class);
+        /** @var \Plenty\Modules\Account\Contact\Contracts\ContactRepositoryContract $contactRepo */
+        $contactRepo = pluginApp(ContactRepositoryContract::class);
 
         /** @var \Plenty\Modules\Authorization\Services\AuthHelper $authHelper */
         $authHelper = pluginApp(AuthHelper::class);
 
-        $address = null;
+        $contact = null;
 
-        $address = $authHelper->processUnguarded(
-            function () use ($addressRepo, $address) {
-                return $addressRepo->findAddressById(42);
+        $contact = $authHelper->processUnguarded(
+            function () use ($contactRepo, $contact) {
+                return $contactRepo->findContactById(42);
             }
         );
 
-        return json_encode($address);
+        return json_encode($contact);
     }
 }
