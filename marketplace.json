@@ -1,0 +1,26 @@
+{
+  "marketplaceName"   : {"en":"Development test"},
+  "license"           : "GPL",
+  "price"             : 0,
+  "shortDescription"  : {"en":"plentymarkets plugin for testing purposes only"},
+  "categories"        : ["3518"],
+  "keywords"          : ["plugins", "template"],
+  "subscription": [
+    {
+      "interval": "monthly",
+      "price": 10000.00
+    },
+    {
+      "interval": "quarterly",
+      "price": 30000.00
+    },
+    {
+      "interval": "half-yearly",
+      "price": 60000.00
+    },
+    {
+      "interval": "yearly",
+      "price": 120000.00
+    }
+  ]
+}
