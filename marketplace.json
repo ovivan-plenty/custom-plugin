@@ -1,8 +1,8 @@
 {
-  "marketplaceName"   : {"en":"Development test"},
+  "marketplaceName"   : {"de":"Development test", "en":"Development test"},
   "license"           : "GPL",
-  "price"             : 0,
-  "shortDescription"  : {"en":"plentymarkets plugin for testing purposes only"},
+  "price"             : 10000,
+  "shortDescription"  : {"de":"plentymarkets plugin for testing purposes only", "en":"plentymarkets plugin for testing purposes only"},
   "categories"        : ["3518"],
   "keywords"          : ["plugins", "template"],
   "subscription": [
