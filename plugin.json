@@ -10,5 +10,5 @@
     "serviceProvider"   :   "CustomPlugin\\Providers\\CustomPluginServiceProvider",
     "platform": {
         "php": "8.2"
-    },
+    }
 }
