@@ -8,7 +8,7 @@
     "author"            :   "Ovidiu Ivan",
     "authorIcon"        :   "icon_author_xs.png",
     "serviceProvider"   :   "CustomPlugin\\Providers\\CustomPluginServiceProvider",
-      "platform": {
-    "php": "8.2"
-  },
+    "platform": {
+        "php": "8.2"
+    },
 }
