@@ -14,8 +14,8 @@ class CustomPluginController extends Controller
      */
     public function getHelloWorldPage()
     {
-        /** @var \Plenty\Modules\Account\Contact\Contracts\ContactRepositoryContract $contactRepo */
-        $contactRepo = pluginApp(ContactRepositoryContract::class);
+        /** @var Plenty\Modules\Item\Item\Contracts\ItemRepositoryContract $itemRepo */
+        $itemRepo = pluginApp(ItemRepositoryContract::class);
 
         /** @var \Plenty\Modules\Authorization\Services\AuthHelper $authHelper */
         $authHelper = pluginApp(AuthHelper::class);
@@ -23,8 +23,8 @@ class CustomPluginController extends Controller
         $contact = null;
 
         $contact = $authHelper->processUnguarded(
-            function () use ($contactRepo, $contact) {
-                return $contactRepo->findContactById(42);
+            function () use ($itemRepo, $contact) {
+                return $itemRepo->show(42);
             }
         );
 
