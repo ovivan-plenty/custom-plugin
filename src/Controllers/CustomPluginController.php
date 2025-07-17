@@ -14,11 +14,16 @@ class CustomPluginController extends Controller
      */
     public function getHelloWorldPage()
     {
+        $a = null;
         /** @var Plenty\Modules\Item\Item\Contracts\ItemRepositoryContract $itemRepo */
         $itemRepo = pluginApp(ItemRepositoryContract::class);
 
         /** @var \Plenty\Modules\Authorization\Services\AuthHelper $authHelper */
         $authHelper = pluginApp(AuthHelper::class);
+
+        if($a) {
+            $a++;
+        }
 
         $contact = null;
 
