@@ -1,5 +1,5 @@
 {
-  "marketplaceName"   : {"de":"Development test", "en":"Development test"},
+  "marketplaceName"   : {"de":"Dev TEST", "en":"Dev TEST"},
   "license"           : "GPL",
   "price"             : 10000,
   "shortDescription"  : {"de":"plentymarkets plugin for testing purposes only", "en":"plentymarkets plugin for testing purposes only"},
