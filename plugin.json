@@ -2,7 +2,7 @@
     "name"              :   "CustomPlugin",
     "namespace"         :   "CustomPlugin",
     "type"              :   "backend",
-    "version"           :   "3.1.20",
+    "version"           :   "3.1.23",
     "pluginIcon"        :   "icon_plugin_xs.png",
     "description"       :   "Test trait",
     "author"            :   "Ovidiu Ivan",
